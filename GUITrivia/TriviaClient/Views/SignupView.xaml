@@ -1,0 +1,84 @@
+﻿<Window x:Class="TriviaClient.Views.SignupView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TriviaClient.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="AliceBlue"
+             
+             >
+    <Border Style="{StaticResource BorderStyle}">
+        <StackPanel Orientation="Vertical"
+                 Margin="20">
+            <TextBlock Text="Sign Up" 
+                    Style="{StaticResource LoginTextBlock}"/>
+            <Grid VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <TextBlock Text="User Name" 
+                 Grid.Row="0"
+                 Style="{StaticResource DefaultTextBlock}"/>
+                
+                <TextBox  Grid.Column="1"
+               Grid.Row="1"
+                x:Name="UsernameInput"
+
+               Style="{StaticResource LoginTextBox}"/>
+
+
+
+                <TextBlock Text="Email" 
+                Grid.Row="2"
+                Style="{StaticResource DefaultTextBlock}"/>
+                
+
+
+
+
+                <TextBox  Grid.Column="1"
+                    Grid.Row="3"
+                     x:Name="EmailInput"
+
+                    Text=""        
+                    Style="{StaticResource LoginTextBox}"/>
+
+
+
+                <TextBlock Text="Password" 
+                    Grid.Row="4"
+                    Style="{StaticResource DefaultTextBlock}"/>
+
+
+
+                <PasswordBox Grid.Row="5"
+                   Password=""
+                             x:Name="PasswordInput"
+                   Style="{StaticResource LoginPasswordBox}"/>
+            </Grid>
+
+
+            <Button x:Name="SignupBtn" 
+                    Content="Sign up"
+                    Click="SignupBtn_Click"
+                 Style="{StaticResource LoginButtonStyle}"/>
+
+            <TextBlock Text="Already Signed Up?"
+                    
+                    Style="{StaticResource SignUpTextBlock}"/>
+
+            <TextBlock Text="Login"
+                     MouseLeftButtonUp="LoginBlock_MouseLeftButtonUp"
+                    Style="{StaticResource SignUpTextBlock}"/>
+        </StackPanel>
+    </Border>
+</Window>

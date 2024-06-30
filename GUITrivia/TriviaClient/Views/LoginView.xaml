@@ -1,0 +1,33 @@
+﻿<Window x:Class="TriviaClient.Views.LoginView"
+                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                       xmlns:local="clr-namespace:TriviaClient.Views"
+                       mc:Ignorable="d"
+                       d:DesignHeight="450"
+                       d:DesignWidth="800"
+                       Background="AliceBlue">
+    <Border Style="{StaticResource BorderStyle}">
+        <StackPanel Orientation="Vertical" Margin="20">
+            <TextBlock Text="Login" Style="{StaticResource LoginTextBlock}"/>
+            <Grid VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Text="User Name" Grid.Row="0" Style="{StaticResource DefaultTextBlock}"/>
+                <TextBox x:Name="UsernameInput" Grid.Row="1" Text="" Style="{StaticResource LoginTextBox}"/>
+                
+                <TextBlock Text="Password" Grid.Row="2" Style="{StaticResource DefaultTextBlock}"/>
+                <PasswordBox x:Name="PasswordInput" Grid.Row="3" Password="" Style="{StaticResource LoginPasswordBox}"/>
+            </Grid>
+            <Button x:Name="LoginBtn" Click="LoginBtn_Click" Content="Login" Style="{StaticResource LoginButtonStyle}"/>
+            <TextBlock Text="Not a member?" Style="{StaticResource SignUpTextBlock}"/>
+            <TextBlock Text="Sign Up" MouseLeftButtonUp="SignupBlock_MouseLeftButtonUp" Style="{StaticResource SignUpTextBlock}"/>
+        </StackPanel>
+    </Border>
+</Window>

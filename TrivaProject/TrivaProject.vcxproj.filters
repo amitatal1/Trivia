@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Handlers">
+      <UniqueIdentifier>{167dfd61-023f-4dd7-8f35-ae230bfe93fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server">
+      <UniqueIdentifier>{940f8b53-f367-404d-bd1c-263a8ed3d6a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Json">
+      <UniqueIdentifier>{1ec0c99a-b529-471a-886b-8c4ca4085760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Handlers">
+      <UniqueIdentifier>{9443ff26-b6f4-404a-8b4b-27d97cffd8ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{9022c807-1452-401a-bcaf-c334710f82a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataBases">
+      <UniqueIdentifier>{0929c406-5a65-4eeb-acf7-b8d11a14e408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataBases">
+      <UniqueIdentifier>{665934ad-cde2-4649-b99c-f2726c59fb0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MessagesFormatting">
+      <UniqueIdentifier>{3641a4cc-e7ee-4375-a3f9-ca4522687ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Login">
+      <UniqueIdentifier>{3794f1cf-2206-461d-9dbd-efc9f464cda7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Exceptions">
+      <UniqueIdentifier>{322bd5be-2cbe-414d-826e-c615790affc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rooms">
+      <UniqueIdentifier>{5895b325-a51b-464c-9aa1-17fe8fda8d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Stats">
+      <UniqueIdentifier>{7f4b28ee-c96f-4b7f-8d53-9689b5fa031a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Login">
+      <UniqueIdentifier>{aed9808f-86c9-494a-b749-25a2e93e01eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Stats">
+      <UniqueIdentifier>{9374148b-dde2-4d47-871e-cc11cf01766d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rooms">
+      <UniqueIdentifier>{8db32318-4d98-4e1a-90af-9102c4aff269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{482bb2e1-a703-45c8-b42d-6dbadd4d4aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{377bfe7e-7061-4581-8031-408ef18809cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Serialization.h">
+      <Filter>Header Files\MessagesFormatting</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Header Files\MessagesFormatting</Filter>
+    </ClInclude>
+    <ClInclude Include="IRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Communicator.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="WSAInitializer.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.h">
+      <Filter>Header Files\MessagesFormatting</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SqliteDataBase.h">
+      <Filter>Header Files\DataBases</Filter>
+    </ClInclude>
+    <ClInclude Include="IDataBase.h">
+      <Filter>Header Files\DataBases</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggedUser.h">
+      <Filter>Header Files\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginManager.h">
+      <Filter>Header Files\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="SqlException.h">
+      <Filter>Resource Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.h">
+      <Filter>Header Files\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomManager.h">
+      <Filter>Header Files\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestHandlerFactory.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="StatisticsManager.h">
+      <Filter>Header Files\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomAdminRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralRoomMemberHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomMemberRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Question.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="HTMLParser.h">
+      <Filter>Header Files\MessagesFormatting</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization.cpp">
+      <Filter>Source Files\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="IRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Communicator.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="WSAInitializer.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite3.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SqliteDataBase.cpp">
+      <Filter>Source Files\DataBases</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralRoomMemberHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginManager.cpp">
+      <Filter>Source Files\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggedUser.cpp">
+      <Filter>Source Files\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="StatisticsManager.cpp">
+      <Filter>Source Files\Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestHandlerFactory.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomAdminRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Source Files\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomManager.cpp">
+      <Filter>Source Files\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomMemberRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

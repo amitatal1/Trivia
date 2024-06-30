@@ -1,0 +1,16 @@
+diff a/TrivaProject/Serialization.cpp b/TrivaProject/Serialization.cpp	(rejected hunks)
+@@ -33,7 +33,13 @@
+ }
+ json JsonRequestPacketDeserializer::deserializeRequest(const Buffer& buffer)
+ {
+-    int len = EXTRACT_LEN_FIELD(buffer);
++
++    //extracting the len field from the request
++    int len = 0;
++    string lenStr = "";
++    std::memcpy(&lenStr, &buffer[LEN_STARTING_INDEX], LENGTH_FIELD_SIZE);
++    len = atoi(lenStr.c_str());
++    //std::memcpy(&len, &buffer[LEN_STARTING_INDEX], sizeof(int));
+ 
+     string jsonStr = std::string((char*)&buffer.at(DATA_FIRST_BYTE),len);
+     json data = json::parse(jsonStr);
